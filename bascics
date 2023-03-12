@@ -1,0 +1,20 @@
+const abc=100;
+console.log(30);
+const btnScrollTo=document.querySelector('.btn--scroll-to');
+const h1=document.querySelector('h1');
+const alertH1=function(e){
+    alert('addEventListener:Great you are reading');
+};
+h1.addEventListener('mouseenter',alertH1);
+setTimeout(()=>h1.removeEventListener('mouseenter',alertH1,3000));
+//const randomInt=(min,max)=>Math.floor(Math.random()*(max-min+1)+min);
+//const randomcolor=()=>`rgb(${})`
+const future=new Date(2037,10,19,15,23);
+console.log(future);
+console.log(future.getFullYear());
+console.log(future.getMonth());
+console.log(future.getDate());
+console.log(future.getDay());
+console.log(future.getHours());
+console.log(future.getMinutes());
+console.log(future.getSeconds());
