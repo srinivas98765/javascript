@@ -27,6 +27,7 @@ const calcDayspassed=(date1,date2)=>
 (date2-date1)/(1000*60*60*24);
 const days1=calcDayspassed(new Date(2037,3,14),new Date(2037,3,24));
 console.log(days1);
+**************************************************
 == checks weather equal value.
 === checks weather equal value and type.
 var y= BigInt("100");
@@ -37,3 +38,12 @@ var y= BigInt("100");
                 document.write("it executing");
             }
             its does not print it executing because of different data types
+*******************************************
+let a="Harry";
+let b=6;
+console.log(a+b);
+console.log(typeof(a+b));
+output:
+Harry6
+String
+******************************************
