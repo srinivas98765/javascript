@@ -44,4 +44,17 @@ else{
 }
 input:node index.js add orange.txt 'this is is the file'
 **********************************************
-  
+  const { error } = require('console');
+const fs=require('fs');
+const path=require('path');
+const dirpath=path.join(__dirname,'crud');
+const dir=`${dirpath}/apple.txt`;
+    
+
+
+fs.appendFile(dir,"a simple tet file",(err)=>{
+    if(!err)
+    {
+        console.log("file is updated");
+    }
+})
