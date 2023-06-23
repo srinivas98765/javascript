@@ -58,3 +58,14 @@ fs.appendFile(dir,"a simple tet file",(err)=>{
         console.log("file is updated");
     }
 })
+************************************************
+  const express = require('express');
+const app=express();
+app.get('',(req,res)=>{
+    res.send('hello to simple page');
+});
+app.get('/about',(req,res)=>{
+    res.send('Hello, This is about page');
+});
+app.listen(5000);
+***********************************************
