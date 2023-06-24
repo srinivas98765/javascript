@@ -69,3 +69,14 @@ app.get('/about',(req,res)=>{
 });
 app.listen(5000);
 ***********************************************
+  The code that is used to access static html files in given folder and folder must be in the inner folder of that .js file.
+const express = require('express');
+const app=express();
+const path=require('path');
+const Publicpath=path.join(__dirname,'public');
+
+app.use(express.static(Publicpath));
+
+app.listen(5000);
+here I am accessing the html file
+*************************************************
