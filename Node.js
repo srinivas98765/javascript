@@ -80,3 +80,28 @@ app.use(express.static(Publicpath));
 app.listen(5000);
 here I am accessing the html file
 *************************************************
+ pizzashop.js  
+const event=require("node:events");
+class pizzashop extends event{
+constructor(){
+    super();
+    this.orderid=0;
+}
+display(size,amount){
+    this.orderid++;
+    this.emit("display",size,amount);
+}
+displayordername(){
+    console.log(`this is the current order id ${this.orderid}`);
+}
+}
+module.exports=pizzashop;
+emitter.js
+const pizzashop=require("./pizzashop");
+
+const pizza=new pizzashop();
+pizza.on("display",(size,amount)=>
+{
+  console.log(`this is the ${size} and ${amount}`);
+});
+pizza.display("100","200");
